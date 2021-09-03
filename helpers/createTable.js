@@ -14,7 +14,7 @@ const createFiletest = async (tabla, error) => {
 
     try{
         await(fileSystem.writeFileSync(`Tabla del ${tabla}.txt`, data)) ;
-        return `Se creo la tabla del ${tabla}`;
+        return `creamos la tabla del ${tabla}`;
     }catch(e){
         throw `Se produjo el error ${e}`;
     }
